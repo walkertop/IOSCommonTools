@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: e39cf3a7f9e2379d481983e4c17ffa7dc3d256ca
+PODS:
+  - FLEX (2.4.0)
+
+DEPENDENCIES:
+  - FLEX (~> 2.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FLEX
+
+SPEC CHECKSUMS:
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+
+PODFILE CHECKSUM: 0bc231ad282c6a57c745ecba5aeeb96572648edf
 
 COCOAPODS: 1.5.0
