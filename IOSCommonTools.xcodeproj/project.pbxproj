@@ -18,6 +18,8 @@
 		5DC28E9C2096C0D900C97E28 /* IOSCommonToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC28E9B2096C0D900C97E28 /* IOSCommonToolsTests.m */; };
 		5DC28EA72096C0D900C97E28 /* IOSCommonToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC28EA62096C0D900C97E28 /* IOSCommonToolsUITests.m */; };
 		5DC28EB62096C12900C97E28 /* CommonLoginAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC28EB52096C12900C97E28 /* CommonLoginAlertView.m */; };
+		5DEC7BD0209CB2CB003BAF94 /* IOSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEC7BCF209CB2CB003BAF94 /* IOSBaseViewController.m */; };
+		5DEC7BD3209CB3A6003BAF94 /* AppDelegate+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEC7BD2209CB3A6003BAF94 /* AppDelegate+Config.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		5DC28EA82096C0D900C97E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DC28EB42096C12900C97E28 /* CommonLoginAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonLoginAlertView.h; sourceTree = "<group>"; };
 		5DC28EB52096C12900C97E28 /* CommonLoginAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonLoginAlertView.m; sourceTree = "<group>"; };
+		5DEC7BCE209CB2CB003BAF94 /* IOSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSBaseViewController.h; sourceTree = "<group>"; };
+		5DEC7BCF209CB2CB003BAF94 /* IOSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSBaseViewController.m; sourceTree = "<group>"; };
+		5DEC7BD1209CB3A6003BAF94 /* AppDelegate+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Config.h"; sourceTree = "<group>"; };
+		5DEC7BD2209CB3A6003BAF94 /* AppDelegate+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Config.m"; sourceTree = "<group>"; };
 		E3CDE01A9B70D4FE4FF05E40 /* Pods-IOSCommonTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSCommonTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSCommonTools/Pods-IOSCommonTools.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +139,10 @@
 				5DC28EB72096C12C00C97E28 /* View */,
 				5DC28E7F2096C0D900C97E28 /* AppDelegate.h */,
 				5DC28E802096C0D900C97E28 /* AppDelegate.m */,
+				5DEC7BD1209CB3A6003BAF94 /* AppDelegate+Config.h */,
+				5DEC7BD2209CB3A6003BAF94 /* AppDelegate+Config.m */,
+				5DEC7BCE209CB2CB003BAF94 /* IOSBaseViewController.h */,
+				5DEC7BCF209CB2CB003BAF94 /* IOSBaseViewController.m */,
 				5DC28E822096C0D900C97E28 /* ViewController.h */,
 				5DC28E832096C0D900C97E28 /* ViewController.m */,
 				5DC28E852096C0D900C97E28 /* Main.storyboard */,
@@ -346,9 +356,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DEC7BD3209CB3A6003BAF94 /* AppDelegate+Config.m in Sources */,
 				5DC28E842096C0D900C97E28 /* ViewController.m in Sources */,
 				5DC28E8A2096C0D900C97E28 /* IOSCommonTools.xcdatamodeld in Sources */,
 				5DC28E922096C0D900C97E28 /* main.m in Sources */,
+				5DEC7BD0209CB2CB003BAF94 /* IOSBaseViewController.m in Sources */,
 				5DC28EB62096C12900C97E28 /* CommonLoginAlertView.m in Sources */,
 				5DC28E812096C0D900C97E28 /* AppDelegate.m in Sources */,
 			);

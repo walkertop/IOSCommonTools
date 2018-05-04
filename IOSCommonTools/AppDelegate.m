@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+Config.h"
 
 @interface AppDelegate ()
 
@@ -96,23 +97,7 @@
     }
 }
 
-#pragma mark - private
-- (void)configTabbarVC {
-    UITabBarController *tabbarVc = [[UITabBarController alloc] init];
-    UIViewController *firstVC = [[UIViewController alloc] init];
-    firstVC.view.backgroundColor = [UIColor orangeColor];
-    firstVC.title = @"第一个";
-    
-    UIViewController *secondVC = [[UIViewController alloc] init];
-    secondVC.view.backgroundColor = [UIColor grayColor];
-    secondVC.title = @"第2个";
-    secondVC.view.bounds = [UIScreen mainScreen].bounds;
-    
-    tabbarVc.viewControllers = [NSArray arrayWithObjects:firstVC, secondVC,nil];
-    self.window = [[UIWindow alloc] init];
-    self.window.rootViewController = tabbarVc;
-    [self.window makeKeyAndVisible];
-}
+
 
 
 @end
