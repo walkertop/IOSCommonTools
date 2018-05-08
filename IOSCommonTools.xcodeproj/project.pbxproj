@@ -18,6 +18,7 @@
 		5DC28E9C2096C0D900C97E28 /* IOSCommonToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC28E9B2096C0D900C97E28 /* IOSCommonToolsTests.m */; };
 		5DC28EA72096C0D900C97E28 /* IOSCommonToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC28EA62096C0D900C97E28 /* IOSCommonToolsUITests.m */; };
 		5DC28EB62096C12900C97E28 /* CommonLoginAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC28EB52096C12900C97E28 /* CommonLoginAlertView.m */; };
+		5DFBF8AB20A1E8E3009D3643 /* GBRuntimeLog in Resources */ = {isa = PBXBuildFile; fileRef = 5DFBF8AA20A1E8E3009D3643 /* GBRuntimeLog */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		5DC28EA82096C0D900C97E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DC28EB42096C12900C97E28 /* CommonLoginAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonLoginAlertView.h; sourceTree = "<group>"; };
 		5DC28EB52096C12900C97E28 /* CommonLoginAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonLoginAlertView.m; sourceTree = "<group>"; };
+		5DFBF8AA20A1E8E3009D3643 /* GBRuntimeLog */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GBRuntimeLog; sourceTree = "<group>"; };
 		E3CDE01A9B70D4FE4FF05E40 /* Pods-IOSCommonTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSCommonTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSCommonTools/Pods-IOSCommonTools.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 		5DC28E7E2096C0D900C97E28 /* IOSCommonTools */ = {
 			isa = PBXGroup;
 			children = (
+				5DFBF8A920A1E8D0009D3643 /* Tools */,
 				5DC28EB72096C12C00C97E28 /* View */,
 				5DC28E7F2096C0D900C97E28 /* AppDelegate.h */,
 				5DC28E802096C0D900C97E28 /* AppDelegate.m */,
@@ -170,6 +173,14 @@
 				5DC28EB52096C12900C97E28 /* CommonLoginAlertView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5DFBF8A920A1E8D0009D3643 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5DFBF8AA20A1E8E3009D3643 /* GBRuntimeLog */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +247,7 @@
 		5DC28E742096C0D900C97E28 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = walker;
 				TargetAttributes = {
 					5DC28E7B2096C0D900C97E28 = {
@@ -283,6 +294,7 @@
 				5DC28E8F2096C0D900C97E28 /* LaunchScreen.storyboard in Resources */,
 				5DC28E8C2096C0D900C97E28 /* Assets.xcassets in Resources */,
 				5DC28E872096C0D900C97E28 /* Main.storyboard in Resources */,
+				5DFBF8AB20A1E8E3009D3643 /* GBRuntimeLog in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +431,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -426,6 +439,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -453,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -474,6 +488,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -481,6 +496,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -502,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -517,7 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9DWS95K67;
 				INFOPLIST_FILE = IOSCommonTools/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = top.betteris.walker.IOSCommonTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -533,7 +549,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A9DWS95K67;
 				INFOPLIST_FILE = IOSCommonTools/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = top.betteris.walker.IOSCommonTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
