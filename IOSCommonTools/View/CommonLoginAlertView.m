@@ -37,12 +37,13 @@ static const CGFloat buttonWidth     = 133;
                        cancel: (cancelBlock)cancelBlock
            successButtonTitle:(NSString *)successButton
                       success: (successBlock)successBlock {
-    if (self = [super initWithFrame:[UIScreen mainScreen].bounds]   ) {
+    if (self = [super initWithFrame:[UIScreen mainScreen].bounds]) {
         self.image = image;
         self.cancelButtonTitle = cancelButton;
         self.successButtonTitle = successButton;
         self.cancelBlock = cancelBlock;
         self.successBlock = successBlock;
+        
         [self setupUI];
     }
     return self;
@@ -54,10 +55,9 @@ static const CGFloat buttonWidth     = 133;
     [keywindow addSubview:self];
 }
 
-- (void)dismiss{
+- (void)dismiss {
     [self removeFromSuperview];
 }
-
 
 #pragma mark -  private function
 - (UIButton *)createButtonWithFrame:(CGRect)frame Title:(NSString *)title Color: (UIColor *)color{
@@ -86,7 +86,7 @@ static const CGFloat buttonWidth     = 133;
     [self removeFromSuperview];
 }
 
--(void)setupUI{
+- (void)setupUI{
     self.backgroundview = [[UIView alloc] initWithFrame:self.frame];
     self.backgroundview.backgroundColor = [UIColor blackColor];
     self.backgroundview.alpha = 0.5;
