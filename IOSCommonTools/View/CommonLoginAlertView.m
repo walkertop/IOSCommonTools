@@ -8,10 +8,10 @@
 
 #import "CommonLoginAlertView.h"
 
-static const CGFloat alertviewWidth = 267;
-static const CGFloat imageviewHeight = 180;
-static const CGFloat buttonHeight = 50;
-static const CGFloat buttonWidth = 133;
+static const CGFloat alertviewWidth  = 267;
+static const CGFloat imageViewHeight = 180;
+static const CGFloat buttonHeight    = 50;
+static const CGFloat buttonWidth     = 133;
 
 @interface CommonLoginAlertView()
 
@@ -94,45 +94,31 @@ static const CGFloat buttonWidth = 133;
     
     self.alertview = [[UIView alloc] init];
     self.alertview.center = self.center;
-    self.alertview.bounds = CGRectMake(0, 0, alertviewWidth, imageviewHeight + buttonHeight);
+    self.alertview.bounds = CGRectMake(0, 0, alertviewWidth, imageViewHeight + buttonHeight);
     self.alertview.layer.cornerRadius = 10;
     self.alertview.backgroundColor = [UIColor whiteColor];
     self.alertview.clipsToBounds = YES;
     
     [self addSubview:self.alertview];
     
-    UIImageView * imageview = [[UIImageView alloc] initWithFrame:CGRectMake(0,0, alertviewWidth,imageviewHeight)];
+    UIImageView * imageview = [[UIImageView alloc] initWithFrame:CGRectMake(0,0, alertviewWidth,imageViewHeight)];
     imageview.contentMode = UIViewContentModeScaleToFill;
     imageview.image = self.image;
     [self.alertview addSubview:imageview];
     
-    CGRect successButtonFrame = CGRectMake(alertviewWidth / 2, imageviewHeight, buttonWidth,buttonHeight);
+    CGRect successButtonFrame = CGRectMake(alertviewWidth / 2, imageViewHeight, buttonWidth,buttonHeight);
     if (self.successButtonTitle.length) {
         UIButton * successButton = [self createButtonWithFrame:successButtonFrame Title:self.successButtonTitle Color:[UIColor orangeColor]];
         successButton.titleLabel.textColor =[UIColor orangeColor];
         successButton.tag = 0;
         [self.alertview addSubview:successButton];
     }
-    CGRect cancelButtonFrame = CGRectMake(0, imageviewHeight,buttonWidth,buttonHeight);
+    CGRect cancelButtonFrame = CGRectMake(0, imageViewHeight,buttonWidth,buttonHeight);
     
     if (self.cancelButtonTitle.length) {
         UIButton * cancelButton = [self createButtonWithFrame:cancelButtonFrame Title:self.cancelButtonTitle Color:[UIColor blackColor]];
         cancelButton.tag = 1;
         [self.alertview addSubview:cancelButton];
-    }
-}
-
-- (void)successButtonAction:(id)sender {
-    if (self.successBlock) {
-        self.successBlock();
-        [self removeFromSuperview];
-    }
-}
-
-- (void)cancelButtonAction:(id)sender {
-    if (self.cancelBlock) {
-        self.cancelBlock();
-        [self removeFromSuperview];
     }
 }
 
