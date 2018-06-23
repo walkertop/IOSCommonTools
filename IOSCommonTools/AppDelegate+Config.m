@@ -12,6 +12,7 @@
 @implementation AppDelegate (Config)
 
 - (void)configTabbarVC {
+    
     UITabBarController *tabbarVc = [[UITabBarController alloc] init];
     UIViewController *firstVC = [[IOSBaseViewController alloc] init];
     //    firstVC.view.backgroundColor = [UIColor orangeColor];
