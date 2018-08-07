@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5062C039DC934CEA78A6AC25 /* Pods_IOSCommonTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308A9E09C65DC40F2E561CCC /* Pods_IOSCommonTools.framework */; };
 		5D6044B820AA93A600D87546 /* NSObject+CustomDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6044B720AA93A600D87546 /* NSObject+CustomDescription.m */; };
+		5D925EE420F7599C00E7800F /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D925EE320F7599C00E7800F /* ThirdViewController.m */; };
+		5D925EE720F759C000E7800F /* TestResponserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D925EE620F759C000E7800F /* TestResponserViewController.m */; };
+		5D925EEA20F75C7800E7800F /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D925EE920F75C7800E7800F /* UIView+Additions.m */; };
 		5DC28E812096C0D900C97E28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC28E802096C0D900C97E28 /* AppDelegate.m */; };
 		5DC28E842096C0D900C97E28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC28E832096C0D900C97E28 /* ViewController.m */; };
 		5DC28E872096C0D900C97E28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC28E852096C0D900C97E28 /* Main.storyboard */; };
@@ -46,6 +49,12 @@
 		308A9E09C65DC40F2E561CCC /* Pods_IOSCommonTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSCommonTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D6044B620AA93A600D87546 /* NSObject+CustomDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CustomDescription.h"; sourceTree = "<group>"; };
 		5D6044B720AA93A600D87546 /* NSObject+CustomDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CustomDescription.m"; sourceTree = "<group>"; };
+		5D925EE220F7599C00E7800F /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		5D925EE320F7599C00E7800F /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		5D925EE520F759C000E7800F /* TestResponserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestResponserViewController.h; sourceTree = "<group>"; };
+		5D925EE620F759C000E7800F /* TestResponserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestResponserViewController.m; sourceTree = "<group>"; };
+		5D925EE820F75C7800E7800F /* UIView+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		5D925EE920F75C7800E7800F /* UIView+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		5DC28E7C2096C0D900C97E28 /* IOSCommonTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSCommonTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC28E7F2096C0D900C97E28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5DC28E802096C0D900C97E28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -149,6 +158,10 @@
 				5DEC7BD2209CB3A6003BAF94 /* AppDelegate+Config.m */,
 				5DEC7BCE209CB2CB003BAF94 /* IOSBaseViewController.h */,
 				5DEC7BCF209CB2CB003BAF94 /* IOSBaseViewController.m */,
+				5D925EE220F7599C00E7800F /* ThirdViewController.h */,
+				5D925EE320F7599C00E7800F /* ThirdViewController.m */,
+				5D925EE520F759C000E7800F /* TestResponserViewController.h */,
+				5D925EE620F759C000E7800F /* TestResponserViewController.m */,
 				5DC28E822096C0D900C97E28 /* ViewController.h */,
 				5DC28E832096C0D900C97E28 /* ViewController.m */,
 				5DC28E852096C0D900C97E28 /* Main.storyboard */,
@@ -194,6 +207,8 @@
 				5DFBF8AA20A1E8E3009D3643 /* GBRuntimeLog */,
 				5D6044B620AA93A600D87546 /* NSObject+CustomDescription.h */,
 				5D6044B720AA93A600D87546 /* NSObject+CustomDescription.m */,
+				5D925EE820F75C7800E7800F /* UIView+Additions.h */,
+				5D925EE920F75C7800E7800F /* UIView+Additions.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -377,10 +392,13 @@
 				5DC28E842096C0D900C97E28 /* ViewController.m in Sources */,
 				5DC28E8A2096C0D900C97E28 /* IOSCommonTools.xcdatamodeld in Sources */,
 				5DC28E922096C0D900C97E28 /* main.m in Sources */,
+				5D925EE720F759C000E7800F /* TestResponserViewController.m in Sources */,
 				5D6044B820AA93A600D87546 /* NSObject+CustomDescription.m in Sources */,
+				5D925EE420F7599C00E7800F /* ThirdViewController.m in Sources */,
 				5DEC7BD0209CB2CB003BAF94 /* IOSBaseViewController.m in Sources */,
 				5DC28EB62096C12900C97E28 /* CommonLoginAlertView.m in Sources */,
 				5DC28E812096C0D900C97E28 /* AppDelegate.m in Sources */,
+				5D925EEA20F75C7800E7800F /* UIView+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

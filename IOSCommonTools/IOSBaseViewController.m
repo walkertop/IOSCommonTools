@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
+    NSLog(@"%@",self.nextResponder);
+    NSLog(@"%@",self.view.nextResponder);
     
 }
 
@@ -28,6 +30,7 @@
 
 
 #pragma mark - lazy
+
 
 
 
