@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5062C039DC934CEA78A6AC25 /* Pods_IOSCommonTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308A9E09C65DC40F2E561CCC /* Pods_IOSCommonTools.framework */; };
 		5D6044B820AA93A600D87546 /* NSObject+CustomDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6044B720AA93A600D87546 /* NSObject+CustomDescription.m */; };
+		5D852BFF217A009F007BB596 /* PAirSandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D852BFE217A009E007BB596 /* PAirSandbox.m */; };
 		5D925EE420F7599C00E7800F /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D925EE320F7599C00E7800F /* ThirdViewController.m */; };
 		5D925EE720F759C000E7800F /* TestResponserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D925EE620F759C000E7800F /* TestResponserViewController.m */; };
 		5D925EEA20F75C7800E7800F /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D925EE920F75C7800E7800F /* UIView+Additions.m */; };
@@ -49,6 +50,8 @@
 		308A9E09C65DC40F2E561CCC /* Pods_IOSCommonTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSCommonTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D6044B620AA93A600D87546 /* NSObject+CustomDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CustomDescription.h"; sourceTree = "<group>"; };
 		5D6044B720AA93A600D87546 /* NSObject+CustomDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CustomDescription.m"; sourceTree = "<group>"; };
+		5D852BFD217A009E007BB596 /* PAirSandbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAirSandbox.h; sourceTree = "<group>"; };
+		5D852BFE217A009E007BB596 /* PAirSandbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAirSandbox.m; sourceTree = "<group>"; };
 		5D925EE220F7599C00E7800F /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		5D925EE320F7599C00E7800F /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		5D925EE520F759C000E7800F /* TestResponserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestResponserViewController.h; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 		5DC28E7E2096C0D900C97E28 /* IOSCommonTools */ = {
 			isa = PBXGroup;
 			children = (
+				5D852BFD217A009E007BB596 /* PAirSandbox.h */,
+				5D852BFE217A009E007BB596 /* PAirSandbox.m */,
 				5DFBF8A920A1E8D0009D3643 /* Tools */,
 				5DC28EB72096C12C00C97E28 /* View */,
 				5DC28E7F2096C0D900C97E28 /* AppDelegate.h */,
@@ -352,11 +357,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-IOSCommonTools/Pods-IOSCommonTools-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/DoraemonKit/DoraemonKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
+				"${BUILT_PRODUCTS_DIR}/PNChart/PNChart.framework",
+				"${BUILT_PRODUCTS_DIR}/UICountingLabel/UICountingLabel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoraemonKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PNChart.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICountingLabel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -391,6 +404,7 @@
 				5DEC7BD3209CB3A6003BAF94 /* AppDelegate+Config.m in Sources */,
 				5DC28E842096C0D900C97E28 /* ViewController.m in Sources */,
 				5DC28E8A2096C0D900C97E28 /* IOSCommonTools.xcdatamodeld in Sources */,
+				5D852BFF217A009F007BB596 /* PAirSandbox.m in Sources */,
 				5DC28E922096C0D900C97E28 /* main.m in Sources */,
 				5D925EE720F759C000E7800F /* TestResponserViewController.m in Sources */,
 				5D6044B820AA93A600D87546 /* NSObject+CustomDescription.m in Sources */,

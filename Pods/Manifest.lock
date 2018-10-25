@@ -1,16 +1,40 @@
 PODS:
+  - CocoaLumberjack (3.4.2):
+    - CocoaLumberjack/Default (= 3.4.2)
+    - CocoaLumberjack/Extensions (= 3.4.2)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Extensions (3.4.2):
+    - CocoaLumberjack/Default
+  - DoraemonKit/Core (1.0.0):
+    - PNChart
+  - DoraemonKit/WithLogger (1.0.0):
+    - CocoaLumberjack
+    - DoraemonKit/Core
+    - PNChart
   - FLEX (2.4.0)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
+  - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
+  - DoraemonKit/WithLogger (~> 1.0.0)
   - FLEX (~> 2.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - CocoaLumberjack
+    - DoraemonKit
     - FLEX
+    - PNChart
+    - UICountingLabel
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  DoraemonKit: 8e519fe918da59feab07c58bcfb63135968fbd92
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
-PODFILE CHECKSUM: 0bc231ad282c6a57c745ecba5aeeb96572648edf
+PODFILE CHECKSUM: 0dec49e9caa9f279a8b5682c7b980baa2b6b8e7b
 
 COCOAPODS: 1.5.0

@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 #import "AppDelegate+Config.h"
 #import "FLEX.h"
+#import <DoraemonKit/DoraemonKit.h>
+
+
+#import "PAirSandbox.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +26,20 @@
     [self configTabbarVC];
     
     [[FLEXManager sharedManager] showExplorer];
+    
+    [[DoraemonManager shareInstance] addH5DoorBlock:^(NSString *h5Url) {
+        NSLog(@"使用自带容器打开H5链接: %@",h5Url);
+        [[UIApplication sharedApplication] openURL:h5Url options:nil completionHandler:nil];
+    }];
+    [[DoraemonManager shareInstance] install];
+    
+    
+#ifdef DEBUG
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [[PAirSandbox sharedInstance] enableSwipe];
+    });
+#endif
+    
     return YES;
 }
 
